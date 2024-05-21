@@ -1,0 +1,339 @@
+body {
+  margin: 0;
+  font-family: Consolas;
+  background-color: #000;
+}
+
+  
+  /* Mobile styles */
+  @media (max-width: 767px) {
+    .nav-links {
+      display: none;
+    }
+  }
+  
+  /* Tablet styles */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    body {
+      background-size: auto 100%;
+      background-position: center center;
+    }
+  }
+  
+  /* Desktop styles */
+  @media (min-width: 1024px) {
+    body {
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+
+  header {
+    font-family: Consolas;
+    position: fixed; /* Make the header floating */
+    top: 0; /* Position the header at the top of the viewport */
+    width: 100%; /* Set the width to cover the entire viewport width */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    transition: top 0.3s ease-in-out;
+  }
+  .header-hidden {
+    top: -100px;
+  }
+
+  .navbar-toggler {
+    border: none; /* Remove the default border */
+    outline: none; /* Remove the focus outline */
+  }
+  
+  .navbar-toggler:focus {
+    outline: none; /* Remove the focus outline when the button is clicked */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox=\'0 0 32 32\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath stroke=\'rgba(255, 255, 255, 1)\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-miterlimit=\'10\' d=\'M4 8h24M4 16h24M4 24h24\'/%3E%3C/svg%3E');
+    background-size: contain;
+    width: 24px; /* Change the width of the icon */
+    height: 24px; /* Change the height of the icon */
+  }
+  
+
+  .navbar {
+    background-color: #51392d6b !important;
+    box-shadow: 0 10px 8px rgba(144, 136, 136, 0.2); /* Add a shadow effect */
+    border-radius: 30px 30px 30px 30px;
+    
+  }
+
+  section {
+    border-radius: 20px 20px 20px 20px;
+    background-color: #000; /* Set the background color to black */
+    color: #D2D1CC; /* Set the text color to white for better contrast */
+    padding: 50px 0; /* Add some padding to separate the sections */
+  }
+  
+  /* Update the text color of links for better contrast */
+  section a {
+    color: #51392D;
+  }
+  
+  /* Change the text color on hover for better contrast */
+  section a:hover {
+    color: #ccc;
+  }
+
+  /* light aluminum border */
+  #home, #about-me, #qualification, #project, #contact  {
+   
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 0 10px 5px rgba(144, 136, 136, 0.2);
+    padding: 150px 70px; /* increased value */
+    
+  }
+
+  /* Home */
+  
+
+  body #home { /* more specific selector */
+    text-align: center;
+    margin-top: 90px !important;
+  }
+  
+  #home h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  #home p1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  #home p {
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  #home p2 {
+    font-weight: bold;
+    margin-top: 50px;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .home_scroll {
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .home_scroll-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #51392D;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+  }
+  
+  .home_scroll-mouse {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #51392D;
+  }
+    
+  
+
+    /* about */
+    body #contact { /* more specific selector */
+      text-align: center;
+      
+    }
+    
+    #contact h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    
+    #contact p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+
+  /* contact */
+    #sayHello {
+      background-color: #51392D;
+      color: white;
+      border-radius: 10px;
+      transition: all 0.3s ease; /* Add a smooth transition for all properties */
+    }
+    #sayHello:hover {
+      background-color: #735B4A;
+      cursor: pointer;
+      transform: scale(1.1); /* Increase the button size by 10% */
+    }
+
+    .icon-link {
+      display: flex;
+      align-items: center;
+      background-color: #51392D;
+      border-radius: 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      transition: all 0.3s ease;
+    }
+    .icon-link:hover {
+      background-color: #735B4A;
+      cursor: pointer;
+      transform: scale(1.1); /* Increase the button size by 10% */
+    }
+    
+
+    /* foot */
+    footer.bg-dark{
+      background-color: #51392d6b !important;
+      box-shadow: 0 8px 8px rgba(144, 136, 136, 0.2); /* Add a shadow effect */
+      border-radius: 30px 30px 30px 30px;
+    }
+
+
+
+
+    /* Project */
+
+    #project {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+      text-align: center; /* Center align the child elements */
+      position: relative; /* Required for hover effect */
+    }
+    
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+      justify-content: center; /* Horizontally center the grid items */
+      
+      position: relative; /* Required for hover effect */
+    }
+    
+    #project h2 {
+      display: flex;
+      justify-content: center; /* Horizontally center the h2 element */
+      align-items: center; /* Vertically center the h2 element */
+      height: 100%; /* Make the container take full available height */
+      margin: 0 auto; /* Center horizontally */
+      text-align: center; /* Center vertically */
+      font-size: 50px;
+    }
+    .project {
+     
+      padding: 20px;
+      text-align: center;
+      
+    }
+    
+    .project img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    @media (max-width: 768px) {
+      #project {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+      body {
+        font-size: 12px; /* 25% smaller than the default 16px */
+      }
+    }
+    
+    @media (max-width: 576px) {
+      #project {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+      body {
+        font-size: 12px; /* 25% smaller than the default 16px */
+      }
+    }
+    .buttons {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0; /* Hide the buttons by default */
+      transition: opacity 0.3s ease-in-out;
+    }
+    
+    .project:hover .buttons {
+      opacity: 1; /* Show the buttons on hover */
+    }
+    
+    .buttons a {
+      display: inline-block;
+      margin: 0 5px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    
+    .project:hover .image-container .buttons {
+      opacity: 1; /* Show the buttons on hover */
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .btn-more {
+      background-color: #51392D;
+      color: white;
+      border-radius: 10px;
+      transition: all 0.3s ease; /* Add a smooth transition for all properties */
+    }
+    
+    .btn-more:hover {
+      background-color: #735B4A;
+      cursor: pointer;
+      transform: scale(1.1); /* Increase the button size by 10% */
+    }
+    
+    .btn-animate {
+      transition: all 0.3s ease;
+    }
+    
+    .btn-animate:hover {
+      transform: scale(1.1);
+    }
+
+
+ /*-----------------------------------------------*/   
+ .image-container {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.project-image {
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover .project-image {
+  transform: scale(1.1);
+}
